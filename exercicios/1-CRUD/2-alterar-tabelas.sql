@@ -1,3 +1,2 @@
-ALTER TABLE tabela
-DROP coluna
-ADD nova_coluna1 tipo_dado;
+ALTER TABLE salario_classe
+DROP salario;
