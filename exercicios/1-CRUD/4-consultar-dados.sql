@@ -1,7 +1,8 @@
 SELECT
-coluna1,
-coluna2
+Name,
+Composer,
+AlbumID
 FROM
-tabela
+tracks
 WHERE
-condicao;
+AlbumID = 1;
