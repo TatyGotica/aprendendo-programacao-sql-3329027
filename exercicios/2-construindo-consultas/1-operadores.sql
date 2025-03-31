@@ -1,6 +1,11 @@
--- Construa uma consulta para a tabela "invoice_items" que retorne apenas as colunas InvoiceId, TrackId e UnitPrice.
-
--- Inclua nessa consulta mais três colunas, cada uma como resultado de uma operação aritmética diferente
-
--- Incremente essa consulta utilizando a cláusula WHERE, a qual restringirá o resultado apenas para linhas cujo o InvoiceId seja maior do que 20 e menor ou igual a 30
-
+-- queremos saber o impacto real do aumento de 30% no valor de cada item.
+--para isso não precisamos retornar todas as colunas dessa tabela
+--podemos retornar apenas a coluna "TrackID"
+SELECT 
+TrackID,
+UnitPrice,
+UnitPrice * 1.3,
+UnitPrice + 2.11,
+(UnitPrice + 2.11) % 2
+FROM
+invoice_items;
