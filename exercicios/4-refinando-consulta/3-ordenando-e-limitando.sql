@@ -11,4 +11,4 @@ FirstName AS nome,
 Country AS país
 FROM
 customers
-LIMIT 10;
+LIMIT 10 OFFSET 3;
