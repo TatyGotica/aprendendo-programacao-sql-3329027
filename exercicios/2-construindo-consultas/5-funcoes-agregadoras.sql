@@ -1,1 +1,11 @@
--- Para a tabela "invoices", crie uma consulta que retorne o país e a soma das compras realizadas nele, bem como o valor da compra mínima e máxima, a quantidade de compras realizadas e o ticket médio de cada compra.
+-- essa query retorna todos os resultados
+-- cujo país inicia por ''Bra'' 
+
+SELECT DISTINCT
+CustomerID as id,
+FirstName as nome,
+LastName as sobrenome,
+Address as endereco
+FROM customers
+WHERE
+Country LIKE 'Bra%';
