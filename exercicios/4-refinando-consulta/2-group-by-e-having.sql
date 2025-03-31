@@ -5,3 +5,4 @@
 
 
 -- Na consulta anterior, insira uma coluna que informe a compra de maior valor feita por cada cliente
+
