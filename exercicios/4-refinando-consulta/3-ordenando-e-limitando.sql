@@ -12,5 +12,6 @@ Country AS país
 FROM
 customers
 ORDER BY
-país ASC
+país ASC,
+nome DESC
 LIMIT 10;
