@@ -5,3 +5,10 @@
 
 
 -- Continue usando a consulta anterior, dessa vez retorne 10 resultados, no entando ignore as 3 primeiras linhas
+SELECT
+CustomerID AS id,
+FirstName AS nome,
+Country AS país
+FROM
+customers
+LIMIT 10;
