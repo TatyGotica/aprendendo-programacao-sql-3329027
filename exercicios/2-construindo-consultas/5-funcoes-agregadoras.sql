@@ -1,8 +1,10 @@
 --Funções para agregar valores númericos 
---SUM: usada para somar todas as linhas de uma determinada coluna.
--- representada na query como: SUM(coluna) as soma_coluna
-
+--SUM filtrado por condição.
+-- ou seja: SUM + WHERE
 SELECT
+BillingCountry as pais,
 SUM(Total) as soma_compras
 FROM
-invoices;
+invoices
+WHERE
+BillingCountry = 'Austria';
