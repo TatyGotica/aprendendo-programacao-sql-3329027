@@ -12,4 +12,6 @@ SUM (inv.Total) AS total_gasto
 FROM
 invoices AS inv
 INNER JOIN customers as cus ON inv.CustomerId = cus.CustomerId
-GROUP BY id_cliente;
+GROUP BY id_cliente
+HAVING SUM(inv.Total) >=40;
+
