@@ -11,4 +11,6 @@ FirstName AS nome,
 Country AS país
 FROM
 customers
-LIMIT 10 OFFSET 3;
+ORDER BY
+país ASC
+LIMIT 10;
