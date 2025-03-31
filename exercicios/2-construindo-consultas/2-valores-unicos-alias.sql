@@ -1,7 +1,6 @@
--- Para a tabela "customers" crie uma consulta que retorne apenas os valores únicos da coluna Country
-
-
--- Na consulta anterior, adicione a coluna Company para verificar as combinações únicas entre empresas e países
-
-
--- Nesta mesma consulta, atribua um alias com título em português para cada coluna
+-- Neste exemplo vamos retornar todos os países preenchidos
+-- na coluna country, mas sem repetição/duplicidade
+SELECT DISTINCT 
+Country
+FROM
+customers;
