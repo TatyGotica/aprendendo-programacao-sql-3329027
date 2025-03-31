@@ -1,12 +1,12 @@
 --Funções para agregar valores númericos 
---COUNT: conta quantidades.
--- Quantidade de compras que foram realizadas
---COUNT conta, por exemplo, todas as linhas referentes a Áustria e que tiveram alguma compra realizada maior do que zero.
-
+--MIN: para saber qual foi a compra de menor valor.
+--MAX: para saber com foi a compra de maior valor.
 SELECT
 BillingCountry as pais,
 SUM(Total) as soma_compras,
-COUNT(Total) as qnt_compras_realizadas
+COUNT(Total) as qnt_compras_realizadas,
+MIN(Total) as menor_compra,
+MAX(Total) as maior_compra
 FROM
 invoices
 WHERE
