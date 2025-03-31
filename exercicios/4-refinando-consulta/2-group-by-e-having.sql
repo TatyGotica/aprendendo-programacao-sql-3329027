@@ -5,4 +5,11 @@
 
 
 -- Na consulta anterior, insira uma coluna que informe a compra de maior valor feita por cada cliente
-
+SELECT
+cus.CustomerId AS id_cliente,
+cus.FirstName AS nome,
+SUM (inv.Total) AS total_gasto
+FROM
+invoices AS inv
+INNER JOIN customers as cus ON inv.CustomerId = cus.CustomerId
+GROUP BY id_cliente;
