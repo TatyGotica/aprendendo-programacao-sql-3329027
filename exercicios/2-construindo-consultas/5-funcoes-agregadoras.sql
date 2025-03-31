@@ -1,10 +1,11 @@
--- essa query retorna todos os resultados
--- cujo país inicia por ''Bra'' 
+--Funções para manipulação de dados de tipo textual (string)
+--UPPER: aplicando ele na coluna de sobrenome LastName
+--upper faz a coluna ficar com tudo em letra maiúscula.
 
 SELECT DISTINCT
 CustomerID as id,
 FirstName as nome,
-LastName as sobrenome,
+UPPER (LastName) as sobrenome,
 Address as endereco
 FROM customers
 WHERE
