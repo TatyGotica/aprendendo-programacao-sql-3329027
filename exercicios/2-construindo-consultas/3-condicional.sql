@@ -1,2 +1,4 @@
--- Escreva uma consulta que retorne o nome por extenso dos estados brasileiros
-
+CASE
+WHEN condicao THEN faca isso
+ELSE faca outra coisa
+END AS titulo-coluna
